@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cap infant sense regal · Fundació ITACA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="poster" aria-label="Cartell: Cap infant sense regal">
+
+    <!-- Titular gegant de fons (els regals passen per davant) -->
+    <h1 class="headline">
+      <span>Cap</span>
+      <span>infant</span>
+      <span class="accent">sense</span>
+      <span>regal</span>
+    </h1>
+
+    <!-- Capa on main.js dibuixa els regals 3D (un sol canvas WebGL transparent) -->
+    <div id="gifts"></div>
+
+    <!-- Efectes de còmic (línies d'impacte) que dibuixa main.js -->
+    <svg id="fx" viewBox="0 0 848 1200" aria-hidden="true"></svg>
+
+    <!-- Franja inferior: data i branding (sempre per sobre dels regals) -->
+    <footer class="info">
+      <p class="date">21 de desembre</p>
+      <div class="info-brand">
+        <a class="logo-link" href="https://aeitaca.org" target="_blank" rel="noopener" aria-label="ITACA associació educativa">
+          <img class="logo-itaca" src="img/LogoHD_.webp" alt="ITACA associació educativa">
+        </a>
+        <a class="logo-link" href="https://www.planetafp.es" target="_blank" rel="noopener" aria-label="PlanetaFP">
+          <img class="logo-planeta" src="img/logo_ajustado.png.svg" alt="PlanetaFP">
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- three.js i GLTFLoader en local (sense CDN) + models en base64 -->
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/GLTFLoader.js"></script>
+  <script src="vendor/RoomEnvironment.js"></script>
+  <script src="models/models.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
