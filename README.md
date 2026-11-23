@@ -3,9 +3,7 @@
 Actividad 0612 · *The Interactive Poster* — Desarrollo web en entorno cliente
 Fundación ITACA · L'Hospitalet de Llobregat
 
-| Estado inicial (antes de la animación) | Pantalla llena de regalos |
-|---|---|
-| ![Estado inicial](screenshot-inicio.png) | ![Pantalla llena](screenshot.png) |
+![Cartel completo](screenshot-inicio.png)
 
 ## Concepto
 
@@ -28,7 +26,7 @@ main.js      → escena 3D, física, ciclo de la animación, interacciones y esc
 vendor/      → three.js (r147), GLTFLoader y RoomEnvironment (sin CDN)
 models/      → modelos .glb originales + models.js (versión optimizada en base64)
 img/         → logotipos
-screenshot.png, screenshot-inicio.png
+screenshot-inicio.png
 ```
 
 `main.js` está organizado por secciones: CONFIGURACIÓN (`CONFIG`) → ESTADO → UTILIDADES → ESCENA THREE.JS Y MODELOS → CREACIÓN DE REGALOS → FÍSICAS → INTERACCIONES → CAPTURA → ESCALADO → INICIO. Casi todos los números (cantidad de regalos, velocidades, tiempos, rebotes, sombras…) están en `CONFIG` al principio.
@@ -92,7 +90,7 @@ Los logos de ITACA y PlanetaFP son enlaces a [aeitaca.org](https://aeitaca.org) 
 Abrir `index.html` en el navegador (doble clic o Live Server). No necesita instalar nada. La tipografía se carga desde Google Fonts, así que hace falta conexión a internet.
 
 - **Espacio**: salta a la pantalla llena y la congela, o reanuda.
-- `index.html?capture`: arranca directamente en ese momento. Se ha usado para generar `screenshot.png`.
+- `index.html?capture`: arranca directamente en ese momento. 
 - Requiere WebGL (cualquier navegador moderno).
 
 ## Créditos
